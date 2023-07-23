@@ -1,0 +1,22 @@
+.delete_message {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: #fff0 !important;
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid rgb(0 0 0 / 0%) !important;
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}

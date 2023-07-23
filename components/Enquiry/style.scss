@@ -1,0 +1,209 @@
+.enquiry-title {
+    font-weight: 600;
+    line-height: 45px;
+    color: #000000;
+}
+
+.enquiry-number {
+    position: absolute;
+    width: 247px;
+    height: 37px;
+    right: 20px;
+    top: 85px;
+    border: 0.5px solid;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 3px 3px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #828282;
+}
+.enquiry-button {
+    width: 200px;
+    height: 45px;
+    background: #3660f8 !important;
+    border-radius: 10px !important;
+    margin-top: 1rem;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: #ffffff !important;
+    &:focus {
+        background-color: #3660f8 !important;
+    }
+}
+
+.footer-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer-container p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.badge {
+    border: 1px solid #3660f8;
+    border-radius: 0;
+}
+
+.badge-rectangle.active {
+    border: 1px solid #3660f8;
+    background-color: #3660f8;
+    color: #fff;
+}
+.separator {
+    color: #3660f8;
+}
+.primary-border {
+    border: 1px solid #3660f8;
+}
+
+.light-border {
+    border-color: light;
+}
+.enquiry-control,
+.form-control {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+.enquiryLabelClassName {
+    text-align: left !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: #828282 !important;
+}
+
+.masterLabelClassName {
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.masterInputClassName {
+    border: 1px solid #000000 !important;
+    border-radius: 10px !important;
+    height: 60px !important;
+}
+
+.admissionLabel {
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 26px;
+    color: #828282;
+}
+.admissionInput[type="number"] {
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 26px;
+    color: #828282;
+}
+
+.admissionInput {
+    background: #ffffff !important;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px !important;
+    border: none !important;
+    height: 45px;
+}
+.admissionInput[type="text"] {
+    background: #ffffff !important;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px !important;
+    border: none !important;
+    height: 45px;
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.form__input {
+    background-color: #f5f5f5 !important;
+    border-radius: 10px !important;
+}
+.form__input[type="text"] {
+    background-color: #f5f5f5 !important;
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 33px !important;
+    color: #000000 !important;
+}
+.form__input[type="number"] {
+    background-color: #f5f5f5 !important;
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 33px !important;
+    color: #000000 !important;
+}
+.form__input[type="select"] {
+    background-color: #f5f5f5 !important;
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 33px !important;
+    color: #000000 !important;
+}
+
+.form-group .enquiry-control {
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .enquiry-number {
+        width: 200px;
+        font-size: 16px;
+        line-height: 24px;
+        // top: 65px;
+        right: 15px;
+        text-align: center;
+        height: 30px;
+    }
+    .enquiry-title {
+        margin-top: 2%;
+    }
+}
+@media (max-width: 615px) {
+    .enquiry-title {
+        margin-top: 9%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .enquiry-title {
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .enquiry-title {
+        margin-top: 1%;
+    }
+}
