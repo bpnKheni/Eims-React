@@ -1,0 +1,138 @@
+// .account-link {
+//     border: 1px solid #d9d9d9;
+//     border-radius: 10px 0px 0px 10px;
+//     width: 181px;
+//     height: 35px;
+//     text-align: center;
+//     font-size: 18px;
+//     line-height: 27px;
+//     margin-right: 1%;
+//     text-decoration: none;
+//     color: #000000;
+
+//     :active {
+//         background-color: #026b81 !important;
+//         color: #fff !important;
+//     }
+//     :hover {
+//         text-decoration: none !important;
+//         color: #000000 !important;
+//     }
+// }
+@media (max-width: 768px) {
+    .account-container {
+        height: 66vh;
+        overflow: auto;
+    }
+}
+
+.table_width {
+    width: 200%;
+}
+
+@media only screen and (max-width: 700px) {
+    .table_width {
+        width: 400%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .table_width {
+        width: 100%;
+    }
+}
+
+.filter {
+    width: 100%;
+    padding: 23px 23px 30px 23px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 475px) {
+    .filter {
+        width: 440px;
+        padding: 23px 23px 30px 23px;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.input_filed {
+    border-radius: 10px !important;
+    background: #f5f5f5 !important;
+    border: none !important;
+}
+
+@media only screen and (min-width: 610px) {
+    .filter {
+        width: 440px;
+        width: 560px;
+        padding: 23px 23px 30px 23px;
+        border-radius: 30px;
+        border: none !important;
+    }
+}
+
+.filter_btn {
+    border-radius: 10px !important;
+    background: #f5f5f5 !important;
+    border: none !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 18px !important;
+    padding: 8px 10px !important;
+}
+
+// .radio_button .form-check-input[type="radio"] {
+//     border: 1px solid #000 !important;
+//     padding: 0px !important;
+//     margin: 0px !important;
+// }
+// .radio_button .form-check-input[type="radio"]:checked {
+//     background-image: url("../../../assets/images/Accounts/dot_filter.svg") !important;
+//     background-size: 80% !important;
+//     background-color: #fff !important;
+//     padding: 0px !important;
+//     margin: 0px !important;
+// }
+
+.radio_button .form-check-input {
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border: #026b81 2px solid;
+    padding: 2px;
+}
+
+.radio_button .form-check-label {
+    font-size: 18px;
+}
+
+.radio_button .form-check-input:checked {
+    height: 22px;
+    width: 22px;
+    background-color: #ffffff !important;
+    background-image: url("../../../assets/images/Accounts/dot_filter.svg") !important;
+    background-size: 16px 16px !important;
+    border: #026b81 2px solid !important;
+    padding: 2px !important;
+}
+
+.filterSelect .form-check-input {
+    background-color: #ffffff;
+    border-color: #000000;
+    border-radius: 0px;
+    width: 20px;
+    height: 20px;
+}
+.filterSelect .form-check-label {
+    font-size: 18px;
+}
+
+.filterSelect .form-check-input:checked[type="checkbox"] {
+    --bs-form-check-bg-image: url("../../../assets/images/Accounts/check.svg");
+    background-size: 16px;
+}
+
+

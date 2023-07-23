@@ -1,0 +1,66 @@
+@mixin link(
+  $link: $color-text,
+  $visit: $color-text,
+  $hover: $color-text,
+  $active: $color-text
+) {
+  a {
+    color: $link;
+
+    &:visited {
+      color: $visit;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin fill {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin nolink($color: $color-text) {
+  &:hover,
+  &:active,
+  &:visited {
+    color: $color;
+    text-decoration: none;
+  }
+}
+
+@function rem($val) {
+  $remSize: $val / $px-size;
+  @return #{$remSize}rem;
+}
+
+@function rem_xxs($val) {
+  $remSize: $val / $px-size_xxs;
+  @return #{$remSize}rem;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function em($size, $base-font-size: $font-size-regular) {
+  @return strip-unit($size) / strip-unit($base-font-size) * 1em;
+}

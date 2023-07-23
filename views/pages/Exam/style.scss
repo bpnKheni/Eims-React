@@ -1,0 +1,88 @@
+.datepicker-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .exam-container {
+        height: 75vh;
+        overflow: auto;
+    }
+}
+
+.exam_label {
+    color: #828282;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.exam_input {
+    height: 48px;
+    border-radius: 10px;
+    background-color: #f5f5f5 !important;
+    border: none;
+}
+.exam_input[type="text"] {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 700px) {
+    .exam_table_width {
+        width: 200%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .exam_table_width {
+        width: 100%;
+    }
+}
+
+.exam_table_width td {
+    word-wrap: break-word !important;
+}
+
+.attendance .form-check-input[type="checkbox"]:focus {
+    box-shadow: none;
+}
+.attendance .form-check-input[type="checkbox"] {
+    border-radius: 0.25em;
+    background-color: transparent;
+    border: none;
+    // background-image: url("../../../assets/images/Exam/close_green.svg");
+    background-size: 25px 25px !important;
+    object-fit: cover;
+}
+.attendance .form-check-input[type="checkbox"]:checked {
+    border-radius: 0.25em;
+    background-color: transparent;
+    border: none;
+    background-image: url("../../../assets/images/Exam/check_red.svg");
+    background-size: 18px 18px !important;
+}
+
+.examReport td:last-child {
+    width: 30%;
+}
+
+.obtainMarksInput:focus {
+    border: 2px solid rgb(106, 106, 106) !important;
+    font-size: 15px;
+}
+.obtainMarksInput:hover {
+    border: 2px solid rgb(106, 106, 106) !important;
+    font-size: 15px;
+}
+.obtainMarksInput {
+    border: 2px solid transparent !important;
+    font-size: 15px;
+}
+
+.exam_textArea{
+    border-radius: 10px;
+    background-color: #f5f5f5 !important;
+    border: none;
+    font-size: 21px;
+    font-weight: 500;
+}

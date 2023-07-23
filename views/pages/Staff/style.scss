@@ -1,0 +1,119 @@
+.staff-list-container {
+    overflow: auto;
+    border: 1px solid #000;
+    height: "calc(100vh - 180px)";
+    margin-top: 3px;
+}
+
+.staff-container {
+    height: 70vh;
+    overflow: auto;
+}
+
+.role-select {
+    margin-left: 2%;
+}
+.staff-button {
+    background-color: #3660f8;
+    color: white;
+    width: 210px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 0;
+}
+.edit-button {
+    background-color: #026b81;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 240px;
+    height: 40px;
+    margin: 5px auto;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
+.staff-header {
+    font-weight: 600;
+    line-height: 45px;
+    color: #000000;
+    text-align: center;
+}
+
+.staff_input_style {
+    background: #f5f5f5 !important;
+    border-radius: 10px !important;
+    border: none !important;
+    height: 48px !important;
+}
+
+.staff_input_style[type="text"] {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.staff_input_style[type="password"] {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+.staff_input_style[type="number"] {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.staff_label_style {
+}
+
+.switch_style .form-check-input {
+    width: 56.46px;
+    height: 30px;
+}
+
+.switch_style .form-check-input:checked {
+    background-color: #000000;
+    border-color: #000000;
+}
+.switch_style .form-check-input:focus {
+    box-shadow: none;
+}
+
+.staff-button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.password_button {
+    border: none;
+    width: 188px;
+    height: 52px;
+    background: #3660f8;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.staff_label {
+    margin: 0px 0px 10px 0px !important;
+    font-weight: 400 !important;
+    font-size: calc(1rem + 0.3vw) !important;
+    color: #828282 !important;
+}
+
+.add-button {
+    display: flex;
+    align-items: flex-start;
+}

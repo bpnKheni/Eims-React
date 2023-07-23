@@ -1,0 +1,91 @@
+.ShadowAndRadius {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.totalStudentsAndFaculty {
+    padding: 15px 21px;
+}
+
+.ClassProgressStyle {
+    border-radius: 10px;
+    background: #f0f7ff;
+    padding: 5px 18px;
+}
+
+.NoticeboardStyle {
+    border-radius: 20px;
+    background: #f0f7ff;
+    padding: 20px 19px;
+}
+
+.NoticeboardNumberBadge {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0077ff;
+    color: #ffffff;
+}
+
+.OverflowStyle::-webkit-scrollbar {
+    width: 5px;
+    flex-shrink: 0;
+}
+
+/* Track */
+.OverflowStyle::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background: #eff6fe;
+}
+
+/* Handle */
+.OverflowStyle::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #0077ff;
+}
+
+/* Handle on hover */
+.OverflowStyle::-webkit-scrollbar-thumb:hover {
+    background: #0052b4;
+}
+
+.sliderFill {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// .sliderThumb {
+//     fill: #0052b4;
+//     cursor: pointer;
+// }
+
+.sliderThumbBorder {
+    fill: #0052b4;
+    fill-opacity: 0.3;
+    animation: pulse 1500ms infinite ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        r: 5px;
+    }
+    50% {
+        r: 5.5px;
+    }
+    100% {
+        r: 5px;
+    }
+}
+
+.sliderTrack {
+    &:hover {
+        cursor: pointer;
+    }
+}

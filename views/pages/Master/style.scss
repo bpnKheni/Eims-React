@@ -1,0 +1,51 @@
+@import "../../styles/_variables.scss";
+
+.button-submit {
+    height: 52px;
+    border: none;
+    background: #3660f8;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    min-width: 217px;
+}
+
+.table_checkbox .form-check-input:checked[type="checkbox"] {
+    background-image: url("../../../assets/images/Master/checkmark.svg") !important;
+    background-size: 80% !important;
+    background-color: transparent;
+}
+
+.table_checkbox .form-check-input[type="checkbox"] {
+    border: 2.5px solid #828282 !important;
+    padding: 9px !important;
+    background-color: transparent;
+}
+
+.fees__input {
+    border: none;
+    background-color: transparent;
+    width: 40%;
+    text-align: center;
+    border-radius: $border-rad-sm;
+    outline: none;
+}
+
+.fees__input:hover {
+    border: 2px solid #828282;
+    background-color: $color-text-invert;
+}
+
+.fees__input:focus {
+    border: 2px solid #828282;
+    background-color: $color-text-invert;
+}
+
+.table_last_columns_width .td:last-child {
+    border-right: none;
+    width: 50% !important;
+}

@@ -1,0 +1,33 @@
+@import "_variables";
+@import "_mixins";
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    color: #34485c;
+    font-weight: 600;
+  }
+}
+
+h1 {
+  font-size: rem(30px);
+}
+
+h2 {
+  font-size: rem(28px);
+}
+
+h3 {
+  font-size: rem(25px);
+}
+
+h4 {
+  font-size: rem(23px);
+}
+
+h5 {
+  font-size: rem(22px);
+}
+
+h6 {
+  font-size: rem(20px);
+}

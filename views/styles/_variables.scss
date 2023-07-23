@@ -1,0 +1,56 @@
+@import "_mixins";
+
+$delta: 0.0001px;
+$xxs: 0;
+$xs: 320px;
+$xs-: $xs - $delta;
+$sm: 576px;
+$sm-: $sm - $delta;
+$md: 768px;
+$md-: $md - $delta;
+$lg: 992px;
+$lg-: $lg - $delta;
+$xl: 1200px;
+$xl-: $xl - $delta;
+$xxl: 1400px;
+$xxl-: $xxl - $delta;
+
+$font-size-min: 12px;
+$font-size-regular: 16px;
+$font-size-heading: 28px;
+
+$ff-base: "Poppins", Helvetica, sans-serif;
+$ff-pop: "Inter", Helvetica, sans-serif;
+
+$px-size_xxs: 10px;
+$px-size: $font-size-regular;
+
+$gutter-h: 1.2rem;
+$max-width: calc(1203px + #{$gutter-h} * 2);
+
+$border-rad-xs: rem(4px);
+$border-rad-sm: rem(6px);
+
+$border-rad-md: rem(10px);
+$border-rad-lg: rem(15px);
+
+$color-solid: #9b9999;
+$color-dark-solid: #4c4a4a;
+$color-mute: #d0d1ca;
+$color-extra-mute: hsl(0deg, 0%, 97%);
+$color-border: #dadada;
+$color-border-light: hsl(0deg, 0%, 90%);
+$color-danger: #f61818;
+$color-success: #44a644;
+$color-accent: #4195f5;
+$color-favorie: #f9d;
+$color-text: #000000; // done
+$color-text-invert: #ffffff;
+$color-text-sec: hsl(0deg, 0%, 50%);
+$color-text-sec: #5d5d5d;
+$color-text-semimute: hsl(0deg, 0%, 35%);
+
+$time-duration: 0.5s;
+$time-duration-min: 0.2s;
+
+

@@ -1,0 +1,346 @@
+// @import "~bootstrap/scss/bootstrap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "reset.css";
+@import "_variables";
+@import "_mixins";
+@import "_helpers";
+@import "_elements";
+@import "_typography";
+@import "_forms";
+@import "_utils";
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media (min-width: $xs) {
+        font-size: 75%;
+    }
+
+    @media (min-width: $lg) {
+        font-size: 75%;
+    }
+
+    @media (min-width: (($lg + $xl) / 2)) {
+        font-size: 80%;
+    }
+
+    @media (min-width: $xl) {
+        font-size: 90%;
+    }
+
+    @media (min-width: $xxl) {
+        font-size: 100%;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    min-height: 100vh;
+    color: $color-text;
+    font-family: $ff-base;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+*::selection {
+    background-color: $color-accent;
+    color: $color-text-invert;
+}
+
+.layout__wrapper {
+    margin-left: unset !important;
+    margin-left: unset !important;
+}
+
+///// Sidebar Section ////
+
+.sidebar {
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 20px !important; // Grid view has some default (margin-top)
+    min-height: calc(100vh - 20px - 20px);
+    position: sticky;
+    width: calc(400px - 60px) !important;
+}
+
+.screen_container {
+    width: calc(80% - 400px - 60px) !important;
+    margin-top: 20px !important;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+}
+
+.tab__container {
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    gap: 0.25rem;
+    display: flex;
+    margin: 1rem auto;
+
+    & :first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    & :last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .menu {
+        padding: 5px;
+        text-decoration: none;
+        border: 1px solid #d9d9d9;
+        background-color: #f5f5f5;
+        width: 280px;
+        color: #000000;
+        text-align: center;
+        font-weight: 400;
+
+        &:hover {
+            border: 1px solid #026b81;
+            background-color: #026b81;
+            text-decoration: none;
+            transition: all ease-in 0.5s;
+            color: #ffffff;
+        }
+    }
+
+    .active__menu {
+        border: 1px solid #026b81;
+        background-color: #026b81;
+        color: #ffffff;
+    }
+}
+
+.nav__container {
+    border: 2px solid black;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    padding: 0px 5px !important;
+}
+
+.standard__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+
+.card__container {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #828282;
+    padding: 0.5% 1%;
+    margin: 1.5% 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .card__container {
+        width: 49%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #828282;
+        padding: 0.5% 1%;
+        margin: 0.8% 0;
+    }
+}
+
+.radioLabel {
+    font-weight: 510;
+    font-size: 22px;
+    color: #828282;
+}
+
+////----- sidebar ////////////////////////////////----------------------------------------------------------------
+.ul {
+    list-style-type: none;
+}
+
+.ul .li {
+    margin: 10px 0px 0px 0px;
+}
+
+.ul .li .link {
+    align-self: center;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+}
+
+.ul .li .link img {
+    margin: 0px 10px 0px 0px;
+}
+
+.ul .li .link .sidebar_text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+
+////----- standard_modal ////////////////////////////////----------------------------------------------------------------
+.modal_save_button {
+    height: 48px;
+    background: #1c8a34;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+.modal_close_button {
+    background: #fc0005;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .edit_modal_width {
+        width: 484px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .edit_modal_width {
+        width: 100% !important;
+        margin: 0 !important;
+        .modal-content {
+            border-radius: 0 !important;
+            .modal-body {
+                padding: 1rem !important;
+            }
+        }
+    }
+}
+
+////---------- removeBtn --------------------------------
+
+.remove_button {
+    height: 30px;
+    width: 30px;
+    background-color: #fe5e5e;
+    border: none;
+    color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.master_wrappers_scroll {
+    height: 65vh;
+    overflow-y: auto;
+    padding: 0px 0px 75px 0px;
+}
+
+/////////// Table z-index issue --------------------------------
+.overLay {
+    z-index: 8 !important;
+}
+
+///---submit button --------------------------------
+.submit_button {
+    border-radius: 15px;
+    background: #3660f8;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+///--- holiday__badge --------------------------------
+.absent__badge {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    color: #ffffff !important;
+}
+
+//---filter-contact--------------------------------
+
+.ProgressFilter {
+    width: 100%;
+    padding: 23px 23px 30px 23px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 475px) {
+    .ProgressFilter {
+        width: 440px;
+        padding: 23px 23px 30px 23px;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// form.Control input and label =================================================================
+
+.input_style {
+    height: 52px;
+    border-radius: 10px !important;
+    background-color: #f5f5f5 !important;
+    border: none !important;
+}
+
+.input_style[type="text"] {
+    height: 52px;
+    border-radius: 10px !important;
+    background-color: #f5f5f5 !important;
+    border: none !important;
+}
+
+.asmission_modal_form_label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #828282;
+}

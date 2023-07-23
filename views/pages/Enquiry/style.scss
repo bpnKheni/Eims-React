@@ -1,0 +1,508 @@
+.enquiry-container {
+    height: 77vh;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+.header-image-container {
+    width: 50px;
+    height: 150px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+}
+
+.header-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #828282 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.add-photo-icon {
+    font-size: 38px;
+}
+
+.select-image-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #828282 !important;
+}
+.form-container {
+    margin-top: 15px;
+}
+.educational-container {
+    height: 77vh;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+.middle-header {
+    margin: 10px 0;
+    font-weight: 600;
+    line-height: 45px;
+    color: #000000;
+}
+
+///////// Guardian Form Section ///////
+.guardain-container {
+    height: 77vh;
+    overflow: auto;
+}
+
+.guardian-label {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #828282;
+    padding: 10px;
+    width: 30%;
+    position: relative;
+}
+
+@media only screen and (max-width: 950px) {
+    .guardian-label {
+        border: none;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        font-size: 18px;
+        color: #828282;
+        padding: 10px;
+        width: 70%;
+        position: relative;
+    }
+}
+
+.guardian-check {
+    position: absolute;
+    right: 0%;
+    top: 16%;
+}
+
+@media (max-width: 767px) {
+    .enquiry-container {
+        margin-bottom: 15px;
+    }
+    .educational-container {
+        margin-bottom: 15px;
+    }
+    .guardain-container {
+        margin-bottom: 15px;
+    }
+    .header-image-container {
+        width: 30%;
+        height: 90px;
+    }
+
+    .add-photo-icon {
+        font-size: 28px;
+    }
+
+    .select-image-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .enquiry-container {
+        margin-bottom: 8px;
+    }
+    .educational-container {
+        margin-bottom: 8px;
+    }
+    .guardain-container {
+        margin-bottom: 8px;
+    }
+    .header-image-container {
+        width: 40px;
+        height: 120px;
+    }
+    .add-photo-icon {
+        font-size: 32px;
+    }
+
+    .select-image-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .enquiry-container {
+        margin-bottom: 8px;
+    }
+    .educational-container {
+        margin-bottom: 8px;
+    }
+    .guardain-container {
+        margin-bottom: 8px;
+    }
+    .header-image-container {
+        width: 60px;
+        height: 130px;
+    }
+    .add-photo-icon {
+        font-size: 32px;
+    }
+
+    .select-image-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/// Enquiry Component CSS
+.enquiry-title {
+    font-weight: 600;
+    line-height: 45px;
+    color: #000000;
+}
+
+.enquiry-number {
+    position: absolute;
+    width: 247px;
+    height: 37px;
+    right: 20px;
+    top: 85px;
+    border: 0.5px solid;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0 3px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #828282;
+}
+.enquiry-button {
+    width: 200px;
+    height: 45px;
+    background: #3660f8 !important;
+    border-radius: 10px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.primary-border {
+    border: 1px solid #3660f8;
+}
+
+.light-border {
+    border-color: light;
+}
+.enquiry-control,
+.form-control {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+.enquiry-label,
+.form-label {
+    text-align: left !important;
+}
+
+.form-group .enquiry-control {
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .enquiry-number {
+        width: 200px;
+        font-size: 16px;
+        line-height: 24px;
+        top: 65px;
+        right: 15px;
+        text-align: center;
+        height: 30px;
+    }
+    .enquiry-title {
+        margin-top: 2%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .enquiry-title {
+        margin-top: 1%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .enquiry-title {
+        margin-top: 1%;
+    }
+}
+
+.prefix_width {
+    width: 15%;
+}
+
+.educational_select_width {
+    width: 100%;
+}
+
+.enquiry_form_student_photo {
+    width: 229px;
+    height: 255px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.selected_photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.contact_number_checkbox_position {
+    top: 57px;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.contact_number_checkbox .form-check-input:checked[type="checkbox"] {
+    background-image: url("../../../assets/images/Master/checkmark.svg") !important;
+    background-size: 80% !important;
+    background-color: transparent;
+}
+
+.contact_number_checkbox .form-check-input[type="checkbox"] {
+    border: 2.5px solid #828282 !important;
+    padding: 9px !important;
+    background-color: transparent;
+}
+
+.Sibling_details_add_icon {
+    background: none;
+    border: none;
+}
+
+.check_box_wrapper {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: end;
+    height: 51px;
+    margin: 0px !important;
+    top: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.datepicker {
+    background-color: #f5f5f5;
+    border: none;
+    height: 51px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #828282;
+}
+
+.radio_check_box .form-check-label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.radio_check_box .form-check-input {
+    height: 22px;
+    width: 22px;
+    background-color: #ffffff;
+    border: #3660f8 2px solid;
+    padding: 2px;
+}
+
+.radio_check_box .form-check-input:checked {
+    height: 22px;
+    width: 22px;
+    background-color: #ffffff !important;
+    background-image: url("../../../assets/images/Enquiry_form/dot.svg") !important;
+    background-size: 65px 65px !important;
+    border: #3660f8 2px solid !important;
+    padding: 2px !important;
+}
+
+.datepicker-container {
+    display: flex !important;
+}
+
+.datepicker-container .react-datepicker {
+    width: 100% !important;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.react-datepicker:hover {
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.react-datepicker__header {
+    background-color: #3f51b5 !important;
+    color: #ffffff !important;
+    font-size: medium;
+    padding: 10px 0px 0px;
+    text-align: center;
+}
+
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+    margin-top: 8px;
+}
+
+.react-datepicker__navigation--next:hover,
+.react-datepicker__navigation--previous:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+    color: #ffffff !important;
+}
+
+.react-datepicker__month-container {
+    background-color: #fff;
+    color: #ffffff;
+}
+
+.react-datepicker__day {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 20px !important;
+}
+
+.react-datepicker__day--selected {
+    background-color: #236ba5;
+    color: rgb(255, 255, 255) !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+    background-color: #236ba5;
+    color: rgb(255, 252, 252) !important;
+}
+
+.react-datepicker__day:hover {
+    background-color: #236ba5 !important;
+    color: #fff;
+}
+
+.react-datepicker__day--today {
+    color: #000;
+    font-weight: bold;
+}
+
+.react-datepicker__day-names {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px !important;
+}
+
+.react-datepicker__day-name {
+    width: 32px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px !important;
+}
+
+.react-datepicker__input-container {
+    display: inline-block;
+}
+
+.react-datepicker__input-container input {
+    width: 100%;
+    border: none;
+    height: 51px;
+    padding: 8px 10px;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.datepicker-navigation {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.datepicker-header {
+    background-color: #3f51b5 !important;
+    color: #ffffff !important;
+    font-size: medium;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.datepicker-year-select {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.datepicker-month-select {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.react-datepicker__day--disabled,
+.react-datepicker__day--disabled:hover {
+    color: #c9c9c9 !important;
+    background-color: #cfcece00 !important;
+    border-radius: 0.3em;
+    cursor: not-allowed;
+}
+
+// .datepicker-navigation {
+//     margin-top: 8px;
+// }
+
+// .datepicker-navigation:hover {
+//     transform: scale(1.2);
+//     transition: all 0.4s;
+// }
+
+// .datepicker-year-select,
+// .datepicker-month-select {
+//     background-color: #fff;
+//     color: #ffffff;
+// }

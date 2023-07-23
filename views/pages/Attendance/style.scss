@@ -1,0 +1,42 @@
+.attendance_radio .form-check-label {
+    font-weight: 400;
+    // font-size: 100%;
+    font-size: 1.25rem;
+    align-self: center;
+    line-height: 25px;
+    color: #000000;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.attendance_radio .form-check-input {
+    height: 17px;
+    width: 17px;
+    background-color: #ffffff;
+    border: #3660f8 1px solid;
+    padding: 2px;
+}
+
+.attendance_radio .form-check-input:checked {
+    background-color: #ffffff !important;
+    background-image: url("../../../assets/images/Enquiry_form/dot.svg") !important;
+    background-size: 7vh !important;
+    border: #3660f8 1px solid !important;
+    padding: 2px !important;
+    box-shadow: none;
+}
+
+.attendance_label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #828282;
+}
+
+@media only screen and (max-width: 600px) {
+    .attendance_table {
+        width: 150%;
+    }
+  }
